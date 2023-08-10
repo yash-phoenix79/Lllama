@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, Geneva, Tahoma, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: rgba(63, 54, 60, 0.233);
+}
+
+.wrap {
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.alpaca {
+    display: flex;
+}
+
+.alpacaArt {
+    width: 450px;
+    height: 450px;
+}
+
+img {
+    width: 100%;
+    /* display: none; */
+}
+
+button {
+    padding: 0.75em 1.5em;
+    border-radius: 2em;
+    margin: 0.5em 0.75em;
+    border: none;
+    outline: 2px solid rgba(0, 140, 255, 0.438);
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.actions button {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+}
+
+.actions button:hover,
+.actions button:focus {
+    background-color: transparent;
+    color: black;
+}
+
+.actions button:active {
+    background-color: #5596f6;
+    color: white;
+}
+
+.actions button img {
+    width: initial;
+    margin-left: 0.5em;
+    /* display : none; */
+}
+
+button:hover,
+button:focus,
+button:active,
+.active {
+    background-color: #5596f6;
+    color: white;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-left: 1.25rem;
+}
+
+.left {
+    position: relative;
+}
+
+.right {
+    /* background-color: rgb(195, 186, 186); */
+
+    padding-inline: 80px;
+}
+
+.right-top {
+    margin-bottom: 1rem;
 }
